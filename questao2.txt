@@ -1,0 +1,6 @@
+Questão 2: Um cliente relata que está enfrentando lentidão em um determinado recurso do sistema. Como você abordaria esse problema para identificar a causa raiz e propor uma solução?
+
+Primeira questão que seria avaliada, seria que é o único cliente com o problema de lentidão naquele recurso devido à conexão de rede.
+Seguindo, verificaria se a mesma lentidão ocorreria numa conexão direta com o servidor.
+Se ocorrer a lentidão na conexão direta, necessário verificarmos se existem problemas no servidor relacionados ao desempenho, como pouca memória ou baixa frequência do processador.
+Além dessas opções relatadas, também necessário verificar se há algum problema de conexão ou rede sobrecarregada.

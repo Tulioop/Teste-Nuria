@@ -1,0 +1,6 @@
+Questão 3: Um usuário informa que está recebendo uma mensagem de erro ao tentar realizar uma operação específica no sistema. Explique como você investigaria esse problema e quais etapas seguiria para solucioná-lo.
+
+Para investigar o problema relatado, seria solicitar a mensagem de erro específica para poder tratar a origem do mesmo.
+Verificar possíveis atualizações no sistema, tanto da máquina quanto do sistema em que está em uso.
+Verificar se há problemas de configuração do sistema ou de permissões do usuário.
+Verificar se há problrmas de conexão com a internet.

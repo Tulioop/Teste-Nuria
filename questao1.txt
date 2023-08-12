@@ -1,0 +1,29 @@
+Questão 1: Considere a seguinte estrutura de tabelas:
+
+Pacientes	        Atendimento	        Prontuário
+id_paciente 	    id_atendimento 	    id_prontuario
+nome_paciente 	    id_paciente 	    id_paciente
+tel_paciente 	    data_atendimento 	id_atendimento
+email_paciente 	    hr_atendimento 	    descricao_prontuario
+status_paciente 	nome_unidade 	
+data_nascimento 	endereco_unidade 	
+cd_especialidade	
+
+
+a) Escreva uma consulta SQL que retorne todos os atendimentos do paciente com a especialidade "Neurologia" nos últimos 6 meses.
+SELECT a.*
+FROM Pacientes AS p
+JOIN Atendimento AS a ON p.id_paciente = a.id_paciente
+JOIN Prontuario AS pr ON a.id_atendimento = pr.id_atendimento
+WHERE pr.cd_especialidade = 'Neurologia' AND a.data_atendimento >= DATE_SUB(CURRENT_DATE, INTERVAL 6 MONTH);
+
+
+
+b) Suponha que você precise obter todos os prontuários associados ao paciente de ID 123, incluindo os detalhes do atendimento relacionado a cada prontuário. A consulta deve retornar o nome do paciente, a descrição do prontuário e a data do atendimento correspondente.
+
+SELECT p.nome_paciente, pr.descricao_prontuario, a.data_atendimento
+FROM Pacientes AS p
+JOIN Atendimento AS a ON p.id_paciente = a.id_paciente
+JOIN Prontuario AS pr ON a.id_atendimento = pr.id_atendimento
+WHERE p.id_paciente = 123
+ORDER BY at.data_atendimento ASC; 

@@ -1,0 +1,7 @@
+Questão 4: Descreva como você lidaria com uma situação em que um usuário encontra um erro desconhecido.
+
+Quando se encontra um erro desconhecido, primeiro passo é entender a natureza do erro, pedindo o usuário o máximo de detalhes sobre o ocorrido. 
+Buscar reproduzir o erro em um ambiente de testes, seguindo as descritivas do usuário.
+Verificar os dados de entrada no sistema, pois podem estar com formatações inválidas.
+Analisar todo processo relacionado ao erro e analisar o código juntamente do processo.
+Consultar documentação do sistema.
